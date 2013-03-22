@@ -27,10 +27,6 @@ def merge_sort(list):
     if len(list) <= 1:
         return list
     
-    leftList = []
-    rightList = []
-    
-
     mid = len(list) / 2
     
     leftList = list[:mid]
