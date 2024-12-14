@@ -1,8 +1,6 @@
-'''
-Created on 2013. 3. 21.
-
-@author: starblood
-'''
+"""
+@author: mong
+"""
 
 def merge(left, right):
     result = []
@@ -27,19 +25,19 @@ def merge_sort(list):
     if len(list) <= 1:
         return list
     
-    mid = len(list) / 2
+    mid: int = int(len(list) / 2)
     
-    leftList = list[:mid]
-    rightList = list[mid:]
+    left_list = list[:mid]
+    right_list = list[mid:]
     
-    leftList = merge_sort(leftList)
-    rightList = merge_sort(rightList)
+    left_list = merge_sort(left_list)
+    right_list = merge_sort(right_list)
     
-    return merge(leftList, rightList)
+    return merge(left_list, right_list)
 
 ''' Test code for sorting algorithm '''
-list = [101, 5, -1, 20, 13, 11]
-print list
+sample_list = [101, 5, -1, 20, 13, 11]
+print(sample_list)
 
-newList = merge_sort(list)
-print newList
+newList = merge_sort(sample_list)
+print(newList)
