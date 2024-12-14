@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "python-scratch"
+version = "1.0.0"
+description = "Test various python programs"
+authors = ["mong <plto001@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python-scratch"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
